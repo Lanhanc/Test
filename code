@@ -1,0 +1,414 @@
+1026u13@capri:~> ls -lart
+total 12
+drwxrwsr-x 18 root     p1026 4096 31 gen 09.33 ..
+drwxr-sr-x  2 p1026u13 p1026 4096 18 feb 01.32 .
+-rw-------  1 p1026u13 p1026  107  9 mar 11.43 .bash_history
+p1026u13@capri:~> ls
+p1026u13@capri:~>  git clone https://github.com/Lanhanc/PF_tnyy
+Cloning into 'PF_tnyy'...
+Username for 'https://github.com': ^C
+p1026u13@capri:~> git clone https://github.com/Lanhanc/PF_tnyy
+Cloning into 'PF_tnyy'...
+remote: Enumerating objects: 10, done.
+remote: Counting objects: 100% (10/10), done.
+remote: Compressing objects: 100% (9/9), done.
+remote: Total 10 (delta 1), reused 10 (delta 1), pack-reused 0
+Receiving objects: 100% (10/10), 4.12 KiB | 844.00 KiB/s, done.
+Resolving deltas: 100% (1/1), done.
+p1026u13@capri:~> ls
+PF_tnyy
+p1026u13@capri:~> cd PF_tnyy/
+p1026u13@capri:~/PF_tnyy> ls
+BCtest.m             crack_solid_tension.m  indices_fields.m  operator_R.m
+crack_solid_shear.m  Hn_evaluation.m        operator_P.m      shape_functions.m
+p1026u13@capri:~/PF_tnyy> pwd
+/stor/progetti/p1026/p1026u13/PF_tnyy
+p1026u13@capri:~/PF_tnyy> ls
+BCtest.m             crack_solid_tension.m  indices_fields.m  operator_R.m
+crack_solid_shear.m  Hn_evaluation.m        operator_P.m      shape_functions.m
+p1026u13@capri:~/PF_tnyy> vi job
+p1026u13@capri:~/PF_tnyy> pwd
+/stor/progetti/p1026/p1026u13/PF_tnyy
+p1026u13@capri:~/PF_tnyy> ls
+BCtest.m             crack_solid_tension.m  indices_fields.m  operator_R.m
+crack_solid_shear.m  Hn_evaluation.m        operator_P.m      shape_functions.m
+p1026u13@capri:~/PF_tnyy> cp /stor/progetti/admincapri/pellizzon/matlab/job .
+p1026u13@capri:~/PF_tnyy> vi job 
+p1026u13@capri:~/PF_tnyy> sr
+sreport   srftopam  srmt      srun      
+p1026u13@capri:~/PF_tnyy> vi job 
+p1026u13@capri:~/PF_tnyy> 
+p1026u13@capri:~/PF_tnyy> !v
+vi job 
+p1026u13@capri:~/PF_tnyy> 
+p1026u13@capri:~/PF_tnyy> !v
+vi job 
+p1026u13@capri:~/PF_tnyy> vi job 
+p1026u13@capri:~/PF_tnyy> ls
+BCtest.m             crack_solid_tension.m  indices_fields.m  operator_P.m  shape_functions.m
+crack_solid_shear.m  Hn_evaluation.m        job               operator_R.m
+p1026u13@capri:~/PF_tnyy> squeue 
+   JOBID               NAME   PARTITION     USER    STATE         TIME   TIME_LIMIT CPUS MIN_M NODELIST(REASON) TRES_PER_NODE  
+  181745           hellompi   allgroups p1060u00  PENDING         0:00      1:00:00    4 59000      (Resources) N/A            
+  181658              final   allgroups p1016u00  PENDING         0:00         5:00    1   10M     (Dependency) N/A            
+  181657            cleanup   allgroups p1016u00  PENDING         0:00         5:00    1   10M     (Dependency) N/A            
+  181656            cleanup   allgroups p1016u00  PENDING         0:00         5:00    1   10M     (Dependency) N/A            
+  181798     bedged_dredged   allgroups p1048u01  RUNNING   5-16:50:18  10-00:00:00    1    8G          hpcapri N/A            
+  181762    assemble_banchi   allgroups p1037u01  RUNNING   6-13:04:18  31-00:00:00   32  500G          hpcapri N/A            
+  181908              job.j   allgroups p1013u00  RUNNING      2:42:07  21-00:00:00   32  400G          hpcapri N/A            
+  181655          binpacker   allgroups p1016u00  RUNNING  14-03:48:49  24-00:00:00    1 14000          hpcapri N/A            
+  181904          tubo_ell4   allgroups p1047u04  RUNNING      7:20:38   2-00:00:00    4    5G          hpcapri N/A            
+  181903          tubo_ell5   allgroups p1047u04  RUNNING     18:36:58   2-00:00:00    4    5G          hpcapri N/A            
+  181882               M7_4   allgroups p1006u02  RUNNING   1-16:27:01   6-00:00:00   48  500G          hpcapri N/A            
+  181909            M7_15_1   allgroups p1058u01  RUNNING        26:37   6-00:00:00   48  500G          hpcapri N/A            
+  181792             ell_20   allgroups p1056u08  RUNNING   5-16:21:48  31-00:01:00    4   10G          hpcapri N/A            
+  181791             ell_19   allgroups p1056u08  RUNNING   5-16:50:18  31-00:01:00    4   10G          hpcapri N/A            
+  181790             ell_18   allgroups p1056u08  RUNNING   5-20:02:34  31-00:01:00    4   10G          hpcapri N/A            
+  181788             ell_16   allgroups p1056u08  RUNNING   6-01:01:35  31-00:01:00    4   10G          hpcapri N/A            
+  181789             ell_17   allgroups p1056u08  RUNNING   6-01:01:35  31-00:01:00    4   10G          hpcapri N/A            
+  181784             ell_12   allgroups p1056u08  RUNNING   6-01:02:05  31-00:01:00    4   10G          hpcapri N/A            
+  181785             ell_13   allgroups p1056u08  RUNNING   6-01:02:05  31-00:01:00    4   10G          hpcapri N/A            
+  181786             ell_14   allgroups p1056u08  RUNNING   6-01:02:05  31-00:01:00    4   10G          hpcapri N/A            
+  181787             ell_15   allgroups p1056u08  RUNNING   6-01:02:05  31-00:01:00    4   10G          hpcapri N/A            
+  181781              ell_9   allgroups p1056u08  RUNNING   6-01:02:35  31-00:01:00    4   10G          hpcapri N/A            
+  181782             ell_10   allgroups p1056u08  RUNNING   6-01:02:35  31-00:01:00    4   10G          hpcapri N/A            
+  181783             ell_11   allgroups p1056u08  RUNNING   6-01:02:35  31-00:01:00    4   10G          hpcapri N/A            
+  181778              ell_6   allgroups p1056u08  RUNNING   6-01:03:05  31-00:01:00    4   10G          hpcapri N/A            
+  181779              ell_7   allgroups p1056u08  RUNNING   6-01:03:05  31-00:01:00    4   10G          hpcapri N/A            
+  181780              ell_8   allgroups p1056u08  RUNNING   6-01:03:05  31-00:01:00    4   10G          hpcapri N/A            
+  181774              ell_2   allgroups p1056u08  RUNNING   6-01:03:35  31-00:01:00    4   10G          hpcapri N/A            
+  181775              ell_3   allgroups p1056u08  RUNNING   6-01:03:35  31-00:01:00    4   10G          hpcapri N/A            
+  181776              ell_4   allgroups p1056u08  RUNNING   6-01:03:35  31-00:01:00    4   10G          hpcapri N/A            
+  181777              ell_5   allgroups p1056u08  RUNNING   6-01:03:35  31-00:01:00    4   10G          hpcapri N/A            
+p1026u13@capri:~/PF_tnyy> sb
+sbang      sbatch     sbcast     sbigtopgm  
+p1026u13@capri:~/PF_tnyy> sbatch 
+BCtest.m               crack_solid_tension.m  Hn_evaluation.m        job                    operator_R.m
+crack_solid_shear.m    .git/                  indices_fields.m       operator_P.m           shape_functions.m
+p1026u13@capri:~/PF_tnyy> sbatch 
+BCtest.m               crack_solid_tension.m  Hn_evaluation.m        job                    operator_R.m
+crack_solid_shear.m    .git/                  indices_fields.m       operator_P.m           shape_functions.m
+p1026u13@capri:~/PF_tnyy> sbatch job
+Submitted batch job 181910
+p1026u13@capri:~/PF_tnyy> 
+p1026u13@capri:~/PF_tnyy> squeue 
+   JOBID               NAME   PARTITION     USER    STATE         TIME   TIME_LIMIT CPUS MIN_M NODELIST(REASON) TRES_PER_NODE  
+  181745           hellompi   allgroups p1060u00  PENDING         0:00      1:00:00    4 59000      (Resources) N/A            
+  181910            PF_tnyy   allgroups p1026u13  PENDING         0:00        30:00    4   20G       (Priority) N/A            
+  181658              final   allgroups p1016u00  PENDING         0:00         5:00    1   10M     (Dependency) N/A            
+  181657            cleanup   allgroups p1016u00  PENDING         0:00         5:00    1   10M     (Dependency) N/A            
+  181656            cleanup   allgroups p1016u00  PENDING         0:00         5:00    1   10M     (Dependency) N/A            
+  181798     bedged_dredged   allgroups p1048u01  RUNNING   5-16:52:32  10-00:00:00    1    8G          hpcapri N/A            
+  181762    assemble_banchi   allgroups p1037u01  RUNNING   6-13:06:32  31-00:00:00   32  500G          hpcapri N/A            
+  181908              job.j   allgroups p1013u00  RUNNING      2:44:21  21-00:00:00   32  400G          hpcapri N/A            
+  181655          binpacker   allgroups p1016u00  RUNNING  14-03:51:03  24-00:00:00    1 14000          hpcapri N/A            
+  181904          tubo_ell4   allgroups p1047u04  RUNNING      7:22:52   2-00:00:00    4    5G          hpcapri N/A            
+  181903          tubo_ell5   allgroups p1047u04  RUNNING     18:39:12   2-00:00:00    4    5G          hpcapri N/A            
+  181882               M7_4   allgroups p1006u02  RUNNING   1-16:29:15   6-00:00:00   48  500G          hpcapri N/A            
+  181909            M7_15_1   allgroups p1058u01  RUNNING        28:51   6-00:00:00   48  500G          hpcapri N/A            
+  181792             ell_20   allgroups p1056u08  RUNNING   5-16:24:02  31-00:01:00    4   10G          hpcapri N/A            
+  181791             ell_19   allgroups p1056u08  RUNNING   5-16:52:32  31-00:01:00    4   10G          hpcapri N/A            
+  181790             ell_18   allgroups p1056u08  RUNNING   5-20:04:48  31-00:01:00    4   10G          hpcapri N/A            
+  181788             ell_16   allgroups p1056u08  RUNNING   6-01:03:49  31-00:01:00    4   10G          hpcapri N/A            
+  181789             ell_17   allgroups p1056u08  RUNNING   6-01:03:49  31-00:01:00    4   10G          hpcapri N/A            
+  181784             ell_12   allgroups p1056u08  RUNNING   6-01:04:19  31-00:01:00    4   10G          hpcapri N/A            
+  181785             ell_13   allgroups p1056u08  RUNNING   6-01:04:19  31-00:01:00    4   10G          hpcapri N/A            
+  181786             ell_14   allgroups p1056u08  RUNNING   6-01:04:19  31-00:01:00    4   10G          hpcapri N/A            
+  181787             ell_15   allgroups p1056u08  RUNNING   6-01:04:19  31-00:01:00    4   10G          hpcapri N/A            
+  181781              ell_9   allgroups p1056u08  RUNNING   6-01:04:49  31-00:01:00    4   10G          hpcapri N/A            
+  181782             ell_10   allgroups p1056u08  RUNNING   6-01:04:49  31-00:01:00    4   10G          hpcapri N/A            
+  181783             ell_11   allgroups p1056u08  RUNNING   6-01:04:49  31-00:01:00    4   10G          hpcapri N/A            
+  181778              ell_6   allgroups p1056u08  RUNNING   6-01:05:19  31-00:01:00    4   10G          hpcapri N/A            
+  181779              ell_7   allgroups p1056u08  RUNNING   6-01:05:19  31-00:01:00    4   10G          hpcapri N/A            
+  181780              ell_8   allgroups p1056u08  RUNNING   6-01:05:19  31-00:01:00    4   10G          hpcapri N/A            
+  181774              ell_2   allgroups p1056u08  RUNNING   6-01:05:49  31-00:01:00    4   10G          hpcapri N/A            
+  181775              ell_3   allgroups p1056u08  RUNNING   6-01:05:49  31-00:01:00    4   10G          hpcapri N/A            
+  181776              ell_4   allgroups p1056u08  RUNNING   6-01:05:49  31-00:01:00    4   10G          hpcapri N/A            
+  181777              ell_5   allgroups p1056u08  RUNNING   6-01:05:49  31-00:01:00    4   10G          hpcapri N/A            
+p1026u13@capri:~/PF_tnyy> squeue 
+   JOBID               NAME   PARTITION     USER    STATE         TIME   TIME_LIMIT CPUS MIN_M NODELIST(REASON) TRES_PER_NODE  
+  181745           hellompi   allgroups p1060u00  PENDING         0:00      1:00:00    4 59000      (Resources) N/A            
+  181658              final   allgroups p1016u00  PENDING         0:00         5:00    1   10M     (Dependency) N/A            
+  181657            cleanup   allgroups p1016u00  PENDING         0:00         5:00    1   10M     (Dependency) N/A            
+  181656            cleanup   allgroups p1016u00  PENDING         0:00         5:00    1   10M     (Dependency) N/A            
+  181798     bedged_dredged   allgroups p1048u01  RUNNING   5-16:52:51  10-00:00:00    1    8G          hpcapri N/A            
+  181910            PF_tnyy   allgroups p1026u13  RUNNING         0:10        30:00    4   20G          hpcapri N/A            
+  181762    assemble_banchi   allgroups p1037u01  RUNNING   6-13:06:51  31-00:00:00   32  500G          hpcapri N/A            
+  181908              job.j   allgroups p1013u00  RUNNING      2:44:40  21-00:00:00   32  400G          hpcapri N/A            
+  181655          binpacker   allgroups p1016u00  RUNNING  14-03:51:22  24-00:00:00    1 14000          hpcapri N/A            
+  181904          tubo_ell4   allgroups p1047u04  RUNNING      7:23:11   2-00:00:00    4    5G          hpcapri N/A            
+  181903          tubo_ell5   allgroups p1047u04  RUNNING     18:39:31   2-00:00:00    4    5G          hpcapri N/A            
+  181882               M7_4   allgroups p1006u02  RUNNING   1-16:29:34   6-00:00:00   48  500G          hpcapri N/A            
+  181909            M7_15_1   allgroups p1058u01  RUNNING        29:10   6-00:00:00   48  500G          hpcapri N/A            
+  181792             ell_20   allgroups p1056u08  RUNNING   5-16:24:21  31-00:01:00    4   10G          hpcapri N/A            
+  181791             ell_19   allgroups p1056u08  RUNNING   5-16:52:51  31-00:01:00    4   10G          hpcapri N/A            
+  181790             ell_18   allgroups p1056u08  RUNNING   5-20:05:07  31-00:01:00    4   10G          hpcapri N/A            
+  181788             ell_16   allgroups p1056u08  RUNNING   6-01:04:08  31-00:01:00    4   10G          hpcapri N/A            
+  181789             ell_17   allgroups p1056u08  RUNNING   6-01:04:08  31-00:01:00    4   10G          hpcapri N/A            
+  181784             ell_12   allgroups p1056u08  RUNNING   6-01:04:38  31-00:01:00    4   10G          hpcapri N/A            
+  181785             ell_13   allgroups p1056u08  RUNNING   6-01:04:38  31-00:01:00    4   10G          hpcapri N/A            
+  181786             ell_14   allgroups p1056u08  RUNNING   6-01:04:38  31-00:01:00    4   10G          hpcapri N/A            
+  181787             ell_15   allgroups p1056u08  RUNNING   6-01:04:38  31-00:01:00    4   10G          hpcapri N/A            
+  181781              ell_9   allgroups p1056u08  RUNNING   6-01:05:08  31-00:01:00    4   10G          hpcapri N/A            
+  181782             ell_10   allgroups p1056u08  RUNNING   6-01:05:08  31-00:01:00    4   10G          hpcapri N/A            
+  181783             ell_11   allgroups p1056u08  RUNNING   6-01:05:08  31-00:01:00    4   10G          hpcapri N/A            
+  181778              ell_6   allgroups p1056u08  RUNNING   6-01:05:38  31-00:01:00    4   10G          hpcapri N/A            
+  181779              ell_7   allgroups p1056u08  RUNNING   6-01:05:38  31-00:01:00    4   10G          hpcapri N/A            
+  181780              ell_8   allgroups p1056u08  RUNNING   6-01:05:38  31-00:01:00    4   10G          hpcapri N/A            
+  181774              ell_2   allgroups p1056u08  RUNNING   6-01:06:08  31-00:01:00    4   10G          hpcapri N/A            
+  181775              ell_3   allgroups p1056u08  RUNNING   6-01:06:08  31-00:01:00    4   10G          hpcapri N/A            
+  181776              ell_4   allgroups p1056u08  RUNNING   6-01:06:08  31-00:01:00    4   10G          hpcapri N/A            
+  181777              ell_5   allgroups p1056u08  RUNNING   6-01:06:08  31-00:01:00    4   10G          hpcapri N/A            
+p1026u13@capri:~/PF_tnyy> squeue 
+   JOBID               NAME   PARTITION     USER    STATE         TIME   TIME_LIMIT CPUS MIN_M NODELIST(REASON) TRES_PER_NODE  
+  181745           hellompi   allgroups p1060u00  PENDING         0:00      1:00:00    4 59000      (Resources) N/A            
+  181658              final   allgroups p1016u00  PENDING         0:00         5:00    1   10M     (Dependency) N/A            
+  181657            cleanup   allgroups p1016u00  PENDING         0:00         5:00    1   10M     (Dependency) N/A            
+  181656            cleanup   allgroups p1016u00  PENDING         0:00         5:00    1   10M     (Dependency) N/A            
+  181798     bedged_dredged   allgroups p1048u01  RUNNING   5-16:52:58  10-00:00:00    1    8G          hpcapri N/A            
+  181910            PF_tnyy   allgroups p1026u13  RUNNING         0:17        30:00    4   20G          hpcapri N/A            
+  181762    assemble_banchi   allgroups p1037u01  RUNNING   6-13:06:58  31-00:00:00   32  500G          hpcapri N/A            
+  181908              job.j   allgroups p1013u00  RUNNING      2:44:47  21-00:00:00   32  400G          hpcapri N/A            
+  181655          binpacker   allgroups p1016u00  RUNNING  14-03:51:29  24-00:00:00    1 14000          hpcapri N/A            
+  181904          tubo_ell4   allgroups p1047u04  RUNNING      7:23:18   2-00:00:00    4    5G          hpcapri N/A            
+  181903          tubo_ell5   allgroups p1047u04  RUNNING     18:39:38   2-00:00:00    4    5G          hpcapri N/A            
+  181882               M7_4   allgroups p1006u02  RUNNING   1-16:29:41   6-00:00:00   48  500G          hpcapri N/A            
+  181909            M7_15_1   allgroups p1058u01  RUNNING        29:17   6-00:00:00   48  500G          hpcapri N/A            
+  181792             ell_20   allgroups p1056u08  RUNNING   5-16:24:28  31-00:01:00    4   10G          hpcapri N/A            
+  181791             ell_19   allgroups p1056u08  RUNNING   5-16:52:58  31-00:01:00    4   10G          hpcapri N/A            
+  181790             ell_18   allgroups p1056u08  RUNNING   5-20:05:14  31-00:01:00    4   10G          hpcapri N/A            
+  181788             ell_16   allgroups p1056u08  RUNNING   6-01:04:15  31-00:01:00    4   10G          hpcapri N/A            
+  181789             ell_17   allgroups p1056u08  RUNNING   6-01:04:15  31-00:01:00    4   10G          hpcapri N/A            
+  181784             ell_12   allgroups p1056u08  RUNNING   6-01:04:45  31-00:01:00    4   10G          hpcapri N/A            
+  181785             ell_13   allgroups p1056u08  RUNNING   6-01:04:45  31-00:01:00    4   10G          hpcapri N/A            
+  181786             ell_14   allgroups p1056u08  RUNNING   6-01:04:45  31-00:01:00    4   10G          hpcapri N/A            
+  181787             ell_15   allgroups p1056u08  RUNNING   6-01:04:45  31-00:01:00    4   10G          hpcapri N/A            
+  181781              ell_9   allgroups p1056u08  RUNNING   6-01:05:15  31-00:01:00    4   10G          hpcapri N/A            
+  181782             ell_10   allgroups p1056u08  RUNNING   6-01:05:15  31-00:01:00    4   10G          hpcapri N/A            
+  181783             ell_11   allgroups p1056u08  RUNNING   6-01:05:15  31-00:01:00    4   10G          hpcapri N/A            
+  181778              ell_6   allgroups p1056u08  RUNNING   6-01:05:45  31-00:01:00    4   10G          hpcapri N/A            
+  181779              ell_7   allgroups p1056u08  RUNNING   6-01:05:45  31-00:01:00    4   10G          hpcapri N/A            
+  181780              ell_8   allgroups p1056u08  RUNNING   6-01:05:45  31-00:01:00    4   10G          hpcapri N/A            
+  181774              ell_2   allgroups p1056u08  RUNNING   6-01:06:15  31-00:01:00    4   10G          hpcapri N/A            
+  181775              ell_3   allgroups p1056u08  RUNNING   6-01:06:15  31-00:01:00    4   10G          hpcapri N/A            
+  181776              ell_4   allgroups p1056u08  RUNNING   6-01:06:15  31-00:01:00    4   10G          hpcapri N/A            
+  181777              ell_5   allgroups p1056u08  RUNNING   6-01:06:15  31-00:01:00    4   10G          hpcapri N/A            
+p1026u13@capri:~/PF_tnyy> ls -lart
+total 56
+-rw-r--r-- 1 p1026u13 p1026  326  9 mar 12.00 BCtest.m
+-rw-r--r-- 1 p1026u13 p1026  926  9 mar 12.00 Hn_evaluation.m
+-rw-r--r-- 1 p1026u13 p1026 4578  9 mar 12.00 crack_solid_shear.m
+-rw-r--r-- 1 p1026u13 p1026 4581  9 mar 12.00 crack_solid_tension.m
+-rw-r--r-- 1 p1026u13 p1026  783  9 mar 12.00 indices_fields.m
+-rw-r--r-- 1 p1026u13 p1026  675  9 mar 12.00 operator_P.m
+-rw-r--r-- 1 p1026u13 p1026  137  9 mar 12.00 operator_R.m
+-rw-r--r-- 1 p1026u13 p1026 1113  9 mar 12.00 shape_functions.m
+drwxr-sr-x 8 p1026u13 p1026 4096  9 mar 12.00 .git
+-rw-r--r-- 1 p1026u13 p1026  391  9 mar 12.15 job
+-rw-r--r-- 1 p1026u13 p1026    0  9 mar 12.17 output_181910.txt
+-rw-r--r-- 1 p1026u13 p1026    0  9 mar 12.17 errors_181910.txt
+drwxr-sr-x 3 p1026u13 p1026 4096  9 mar 12.17 .
+drwxr-sr-x 4 p1026u13 p1026 4096  9 mar 12.17 ..
+p1026u13@capri:~/PF_tnyy> squeue 
+   JOBID               NAME   PARTITION     USER    STATE         TIME   TIME_LIMIT CPUS MIN_M NODELIST(REASON) TRES_PER_NODE  
+  181745           hellompi   allgroups p1060u00  PENDING         0:00      1:00:00    4 59000      (Resources) N/A            
+  181658              final   allgroups p1016u00  PENDING         0:00         5:00    1   10M     (Dependency) N/A            
+  181657            cleanup   allgroups p1016u00  PENDING         0:00         5:00    1   10M     (Dependency) N/A            
+  181656            cleanup   allgroups p1016u00  PENDING         0:00         5:00    1   10M     (Dependency) N/A            
+  181798     bedged_dredged   allgroups p1048u01  RUNNING   5-16:53:13  10-00:00:00    1    8G          hpcapri N/A            
+  181910            PF_tnyy   allgroups p1026u13  RUNNING         0:32        30:00    4   20G          hpcapri N/A            
+  181762    assemble_banchi   allgroups p1037u01  RUNNING   6-13:07:13  31-00:00:00   32  500G          hpcapri N/A            
+  181908              job.j   allgroups p1013u00  RUNNING      2:45:02  21-00:00:00   32  400G          hpcapri N/A            
+  181655          binpacker   allgroups p1016u00  RUNNING  14-03:51:44  24-00:00:00    1 14000          hpcapri N/A            
+  181904          tubo_ell4   allgroups p1047u04  RUNNING      7:23:33   2-00:00:00    4    5G          hpcapri N/A            
+  181903          tubo_ell5   allgroups p1047u04  RUNNING     18:39:53   2-00:00:00    4    5G          hpcapri N/A            
+  181882               M7_4   allgroups p1006u02  RUNNING   1-16:29:56   6-00:00:00   48  500G          hpcapri N/A            
+  181909            M7_15_1   allgroups p1058u01  RUNNING        29:32   6-00:00:00   48  500G          hpcapri N/A            
+  181792             ell_20   allgroups p1056u08  RUNNING   5-16:24:43  31-00:01:00    4   10G          hpcapri N/A            
+  181791             ell_19   allgroups p1056u08  RUNNING   5-16:53:13  31-00:01:00    4   10G          hpcapri N/A            
+  181790             ell_18   allgroups p1056u08  RUNNING   5-20:05:29  31-00:01:00    4   10G          hpcapri N/A            
+  181788             ell_16   allgroups p1056u08  RUNNING   6-01:04:30  31-00:01:00    4   10G          hpcapri N/A            
+  181789             ell_17   allgroups p1056u08  RUNNING   6-01:04:30  31-00:01:00    4   10G          hpcapri N/A            
+  181784             ell_12   allgroups p1056u08  RUNNING   6-01:05:00  31-00:01:00    4   10G          hpcapri N/A            
+  181785             ell_13   allgroups p1056u08  RUNNING   6-01:05:00  31-00:01:00    4   10G          hpcapri N/A            
+  181786             ell_14   allgroups p1056u08  RUNNING   6-01:05:00  31-00:01:00    4   10G          hpcapri N/A            
+  181787             ell_15   allgroups p1056u08  RUNNING   6-01:05:00  31-00:01:00    4   10G          hpcapri N/A            
+  181781              ell_9   allgroups p1056u08  RUNNING   6-01:05:30  31-00:01:00    4   10G          hpcapri N/A            
+  181782             ell_10   allgroups p1056u08  RUNNING   6-01:05:30  31-00:01:00    4   10G          hpcapri N/A            
+  181783             ell_11   allgroups p1056u08  RUNNING   6-01:05:30  31-00:01:00    4   10G          hpcapri N/A            
+  181778              ell_6   allgroups p1056u08  RUNNING   6-01:06:00  31-00:01:00    4   10G          hpcapri N/A            
+  181779              ell_7   allgroups p1056u08  RUNNING   6-01:06:00  31-00:01:00    4   10G          hpcapri N/A            
+  181780              ell_8   allgroups p1056u08  RUNNING   6-01:06:00  31-00:01:00    4   10G          hpcapri N/A            
+  181774              ell_2   allgroups p1056u08  RUNNING   6-01:06:30  31-00:01:00    4   10G          hpcapri N/A            
+  181775              ell_3   allgroups p1056u08  RUNNING   6-01:06:30  31-00:01:00    4   10G          hpcapri N/A            
+  181776              ell_4   allgroups p1056u08  RUNNING   6-01:06:30  31-00:01:00    4   10G          hpcapri N/A            
+  181777              ell_5   allgroups p1056u08  RUNNING   6-01:06:30  31-00:01:00    4   10G          hpcapri N/A            
+p1026u13@capri:~/PF_tnyy> ls
+BCtest.m             crack_solid_tension.m  Hn_evaluation.m   job           operator_R.m       shape_functions.m
+crack_solid_shear.m  errors_181910.txt      indices_fields.m  operator_P.m  output_181910.txt
+p1026u13@capri:~/PF_tnyy> ls -lart
+total 56
+-rw-r--r-- 1 p1026u13 p1026  326  9 mar 12.00 BCtest.m
+-rw-r--r-- 1 p1026u13 p1026  926  9 mar 12.00 Hn_evaluation.m
+-rw-r--r-- 1 p1026u13 p1026 4578  9 mar 12.00 crack_solid_shear.m
+-rw-r--r-- 1 p1026u13 p1026 4581  9 mar 12.00 crack_solid_tension.m
+-rw-r--r-- 1 p1026u13 p1026  783  9 mar 12.00 indices_fields.m
+-rw-r--r-- 1 p1026u13 p1026  675  9 mar 12.00 operator_P.m
+-rw-r--r-- 1 p1026u13 p1026  137  9 mar 12.00 operator_R.m
+-rw-r--r-- 1 p1026u13 p1026 1113  9 mar 12.00 shape_functions.m
+drwxr-sr-x 8 p1026u13 p1026 4096  9 mar 12.00 .git
+-rw-r--r-- 1 p1026u13 p1026  391  9 mar 12.15 job
+-rw-r--r-- 1 p1026u13 p1026    0  9 mar 12.17 output_181910.txt
+-rw-r--r-- 1 p1026u13 p1026    0  9 mar 12.17 errors_181910.txt
+drwxr-sr-x 3 p1026u13 p1026 4096  9 mar 12.17 .
+drwxr-sr-x 4 p1026u13 p1026 4096  9 mar 12.17 ..
+p1026u13@capri:~/PF_tnyy> ls -rtla
+total 56
+-rw-r--r-- 1 p1026u13 p1026  326  9 mar 12.00 BCtest.m
+-rw-r--r-- 1 p1026u13 p1026  926  9 mar 12.00 Hn_evaluation.m
+-rw-r--r-- 1 p1026u13 p1026 4578  9 mar 12.00 crack_solid_shear.m
+-rw-r--r-- 1 p1026u13 p1026 4581  9 mar 12.00 crack_solid_tension.m
+-rw-r--r-- 1 p1026u13 p1026  783  9 mar 12.00 indices_fields.m
+-rw-r--r-- 1 p1026u13 p1026  675  9 mar 12.00 operator_P.m
+-rw-r--r-- 1 p1026u13 p1026  137  9 mar 12.00 operator_R.m
+-rw-r--r-- 1 p1026u13 p1026 1113  9 mar 12.00 shape_functions.m
+drwxr-sr-x 8 p1026u13 p1026 4096  9 mar 12.00 .git
+-rw-r--r-- 1 p1026u13 p1026  391  9 mar 12.15 job
+-rw-r--r-- 1 p1026u13 p1026    0  9 mar 12.17 output_181910.txt
+-rw-r--r-- 1 p1026u13 p1026    0  9 mar 12.17 errors_181910.txt
+drwxr-sr-x 3 p1026u13 p1026 4096  9 mar 12.17 .
+drwxr-sr-x 4 p1026u13 p1026 4096  9 mar 12.17 ..
+p1026u13@capri:~/PF_tnyy> squeue 
+   JOBID               NAME   PARTITION     USER    STATE         TIME   TIME_LIMIT CPUS MIN_M NODELIST(REASON) TRES_PER_NODE  
+  181745           hellompi   allgroups p1060u00  PENDING         0:00      1:00:00    4 59000      (Resources) N/A            
+  181658              final   allgroups p1016u00  PENDING         0:00         5:00    1   10M     (Dependency) N/A            
+  181657            cleanup   allgroups p1016u00  PENDING         0:00         5:00    1   10M     (Dependency) N/A            
+  181656            cleanup   allgroups p1016u00  PENDING         0:00         5:00    1   10M     (Dependency) N/A            
+  181798     bedged_dredged   allgroups p1048u01  RUNNING   5-16:54:24  10-00:00:00    1    8G          hpcapri N/A            
+  181910            PF_tnyy   allgroups p1026u13  RUNNING         1:43        30:00    4   20G          hpcapri N/A            
+  181762    assemble_banchi   allgroups p1037u01  RUNNING   6-13:08:24  31-00:00:00   32  500G          hpcapri N/A            
+  181908              job.j   allgroups p1013u00  RUNNING      2:46:13  21-00:00:00   32  400G          hpcapri N/A            
+  181655          binpacker   allgroups p1016u00  RUNNING  14-03:52:55  24-00:00:00    1 14000          hpcapri N/A            
+  181904          tubo_ell4   allgroups p1047u04  RUNNING      7:24:44   2-00:00:00    4    5G          hpcapri N/A            
+  181903          tubo_ell5   allgroups p1047u04  RUNNING     18:41:04   2-00:00:00    4    5G          hpcapri N/A            
+  181882               M7_4   allgroups p1006u02  RUNNING   1-16:31:07   6-00:00:00   48  500G          hpcapri N/A            
+  181909            M7_15_1   allgroups p1058u01  RUNNING        30:43   6-00:00:00   48  500G          hpcapri N/A            
+  181792             ell_20   allgroups p1056u08  RUNNING   5-16:25:54  31-00:01:00    4   10G          hpcapri N/A            
+  181791             ell_19   allgroups p1056u08  RUNNING   5-16:54:24  31-00:01:00    4   10G          hpcapri N/A            
+  181790             ell_18   allgroups p1056u08  RUNNING   5-20:06:40  31-00:01:00    4   10G          hpcapri N/A            
+  181788             ell_16   allgroups p1056u08  RUNNING   6-01:05:41  31-00:01:00    4   10G          hpcapri N/A            
+  181789             ell_17   allgroups p1056u08  RUNNING   6-01:05:41  31-00:01:00    4   10G          hpcapri N/A            
+  181784             ell_12   allgroups p1056u08  RUNNING   6-01:06:11  31-00:01:00    4   10G          hpcapri N/A            
+  181785             ell_13   allgroups p1056u08  RUNNING   6-01:06:11  31-00:01:00    4   10G          hpcapri N/A            
+  181786             ell_14   allgroups p1056u08  RUNNING   6-01:06:11  31-00:01:00    4   10G          hpcapri N/A            
+  181787             ell_15   allgroups p1056u08  RUNNING   6-01:06:11  31-00:01:00    4   10G          hpcapri N/A            
+  181781              ell_9   allgroups p1056u08  RUNNING   6-01:06:41  31-00:01:00    4   10G          hpcapri N/A            
+  181782             ell_10   allgroups p1056u08  RUNNING   6-01:06:41  31-00:01:00    4   10G          hpcapri N/A            
+  181783             ell_11   allgroups p1056u08  RUNNING   6-01:06:41  31-00:01:00    4   10G          hpcapri N/A            
+  181778              ell_6   allgroups p1056u08  RUNNING   6-01:07:11  31-00:01:00    4   10G          hpcapri N/A            
+  181779              ell_7   allgroups p1056u08  RUNNING   6-01:07:11  31-00:01:00    4   10G          hpcapri N/A            
+  181780              ell_8   allgroups p1056u08  RUNNING   6-01:07:11  31-00:01:00    4   10G          hpcapri N/A            
+  181774              ell_2   allgroups p1056u08  RUNNING   6-01:07:41  31-00:01:00    4   10G          hpcapri N/A            
+  181775              ell_3   allgroups p1056u08  RUNNING   6-01:07:41  31-00:01:00    4   10G          hpcapri N/A            
+  181776              ell_4   allgroups p1056u08  RUNNING   6-01:07:41  31-00:01:00    4   10G          hpcapri N/A            
+  181777              ell_5   allgroups p1056u08  RUNNING   6-01:07:41  31-00:01:00    4   10G          hpcapri N/A            
+p1026u13@capri:~/PF_tnyy> more                                                   
+jo	more: bad usage
+Try 'more --help' for more information.
+p1026u13@capri:~/PF_tnyy> job
+If 'job' is not a typo you can use command-not-found to lookup the package that contains it, like this:
+    cnf job
+p1026u13@capri:~/PF_tnyy> more job 
+#!/bin/bash
+#SBATCH -o output_%j.txt
+#SBATCH -e errors_%j.txt
+#SBATCH -J PF_tnyy
+#SBATCH --mail-user zechao.chen@phd.unipd.it
+#SBATCH --mail-type END,FAIL
+#SBATCH --ntasks 1
+#SBATCH -c 4
+#SBATCH --partition allgroups
+#SBATCH --time 30:00
+#SBATCH --mem 20G
+
+# Invoke with:
+# sbatch job
+
+cd $SLURM_SUBMIT_DIR
+
+#srun which matlab
+#srun matlab -batch test
+srun matlab -batch crack_solid_tension
+p1026u13@capri:~/PF_tnyy> nano job
+p1026u13@capri:~/PF_tnyy> nano newjob.slum
+p1026u13@capri:~/PF_tnyy> ls -lart
+total 60
+-rw-r--r-- 1 p1026u13 p1026  326  9 mar 12.00 BCtest.m
+-rw-r--r-- 1 p1026u13 p1026  926  9 mar 12.00 Hn_evaluation.m
+-rw-r--r-- 1 p1026u13 p1026 4578  9 mar 12.00 crack_solid_shear.m
+-rw-r--r-- 1 p1026u13 p1026 4581  9 mar 12.00 crack_solid_tension.m
+-rw-r--r-- 1 p1026u13 p1026  783  9 mar 12.00 indices_fields.m
+-rw-r--r-- 1 p1026u13 p1026  675  9 mar 12.00 operator_P.m
+-rw-r--r-- 1 p1026u13 p1026  137  9 mar 12.00 operator_R.m
+-rw-r--r-- 1 p1026u13 p1026 1113  9 mar 12.00 shape_functions.m
+drwxr-sr-x 8 p1026u13 p1026 4096  9 mar 12.00 .git
+-rw-r--r-- 1 p1026u13 p1026  391  9 mar 12.15 job
+-rw-r--r-- 1 p1026u13 p1026    0  9 mar 12.17 errors_181910.txt
+drwxr-sr-x 4 p1026u13 p1026 4096  9 mar 12.17 ..
+-rw-r--r-- 1 p1026u13 p1026   89  9 mar 12.22 output_181910.txt
+drwxr-sr-x 3 p1026u13 p1026 4096  9 mar 12.23 .
+-rw-r--r-- 1 p1026u13 p1026   14  9 mar 12.23 newjob.slum
+p1026u13@capri:~/PF_tnyy> cd
+p1026u13@capri:~> ls
+PF_tnyy
+p1026u13@capri:~> ls -l
+total 4
+drwxr-sr-x 3 p1026u13 p1026 4096  9 mar 12.25 PF_tnyy
+p1026u13@capri:~> ls -l
+total 4
+drwxr-sr-x 3 p1026u13 p1026 4096  9 mar 12.27 PF_tnyy
+p1026u13@capri:~> chmod o-r PF_tnyy
+p1026u13@capri:~> ls -l
+total 8
+drwxr-s--x 3 p1026u13 p1026 8192  9 mar 12.29 PF_tnyy
+p1026u13@capri:~> chmod o-x PF_tnyy
+p1026u13@capri:~> ls -lart
+total 32
+drwxrwsr-x 18 root     p1026 4096 31 gen 09.33 ..
+-rw-------  1 p1026u13 p1026  107  9 mar 11.43 .bash_history
+-rw-------  1 p1026u13 p1026 2938  9 mar 12.15 .viminfo
+drwxr-sr-x  4 p1026u13 p1026 4096  9 mar 12.22 .matlab
+drwxr-sr-x  5 p1026u13 p1026 4096  9 mar 12.24 .
+drwxr-sr-x  3 p1026u13 p1026 4096  9 mar 12.24 .java
+drwxr-s---  3 p1026u13 p1026 8192  9 mar 12.29 PF_tnyy
+p1026u13@capri:~> ls -l
+total 8
+drwxr-s--- 3 p1026u13 p1026 8192  9 mar 12.29 PF_tnyy
+p1026u13@capri:~> pwd
+/stor/progetti/p1026/p1026u13
+p1026u13@capri:~> 
+p1026u13@capri:~> ls
+PF_tnyy
+p1026u13@capri:~> sacct 181910
+sacct: error: Unknown arguments:
+sacct: error:  181910
+p1026u13@capri:~> sacct -j 181910
+       JobID    JobName  Partition    Account  AllocCPUS      State ExitCode 
+------------ ---------- ---------- ---------- ---------- ---------- -------- 
+181910          PF_tnyy  allgroups      p1026          4  COMPLETED      0:0 
+181910.batch      batch                 p1026          4  COMPLETED      0:0 
+181910.exte+     extern                 p1026          4  COMPLETED      0:0 
+181910.0         matlab                 p1026          4  COMPLETED      0:0 
+p1026u13@capri:~> sacct -a -o JobID,State,AllocCPUS,REQMEM,TotalCPU,Elapsed,MaxRSS --units=M -j 181910
+       JobID      State  AllocCPUS     ReqMem   TotalCPU    Elapsed     MaxRSS 
+------------ ---------- ---------- ---------- ---------- ---------- ---------- 
+181910        COMPLETED          4    20480Mn  43:07.698   00:22:14            
+181910.batch  COMPLETED          4    20480Mn  00:00.327   00:22:14     14.19M 
+181910.exte+  COMPLETED          4    20480Mn  00:00.004   00:22:14      2.84M 
+181910.0      COMPLETED          4    20480Mn  43:07.367   00:22:13   7323.22M
+
+
+
+
+
+
